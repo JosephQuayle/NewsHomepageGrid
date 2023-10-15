@@ -195,6 +195,10 @@ h4 {
   align-self: center;
 }
 
+.nav-links-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   .grid-container {
     display: flex;
@@ -242,11 +246,43 @@ h4 {
     cursor: pointer;
   }
 
+  .no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+
   .nav-links {
     display: none;
   }
 
   .post {
     padding-top: 0;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .nav-links-mobile li {
+    list-style: none;
+  }
+
+  .nav-links-mobile a {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    cursor: pointer;
+  }
+
+  .nav-links-mobile a:hover {
+    color: hsl(5, 85%, 63%);
   }
 }
