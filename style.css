@@ -286,3 +286,9 @@ h4 {
     color: hsl(5, 85%, 63%);
   }
 }
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
